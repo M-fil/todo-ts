@@ -1,0 +1,7 @@
+@import "../../../../core/styles/colors.scss";
+@import "../../../../core/styles/constants.scss";
+
+.tasks-list {
+  padding: $default-vertical-page-padding $default-horizontal-page-padding;
+  overflow: auto;
+}

@@ -1,0 +1,8 @@
+@import "../../core/styles/colors.scss";
+@import "../../core/styles/constants.scss";
+
+.profile-wrapper {
+  padding: $default-vertical-page-padding $default-horizontal-page-padding;
+  overflow: auto;
+  height: 100%;
+}

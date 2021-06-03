@@ -1,0 +1,18 @@
+@import "../../../styles/colors.scss";
+
+.default-button {
+  cursor: pointer;
+
+  background-color: $primary1;
+  color: $text1;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $border-color inset;
+  }
+}

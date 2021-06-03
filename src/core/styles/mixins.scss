@@ -1,0 +1,40 @@
+@import "./colors.scss";
+@import "./constants.scss";
+@import "./media.scss";
+
+@mixin pageHeader {
+  display: flex;
+  justify-content: flex-start;
+  padding: $default-vertical-page-padding $default-horizontal-page-padding;
+  border-bottom: 3px solid $primary-border-color;
+
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & > * {
+    margin-right: 25px;
+
+    @include media-tablet {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@mixin listItem {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-bottom: 2px solid $list-bottom-border-color;
+  padding: 10px 0;
+
+  @include media-mobile {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &:hover {
+    border-color: $primary-border-color;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../styles/media.scss";
+
+$default-icon-size: 30px;
+$default-icon-size-mobile: 20px;
+
+.navigation-button {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  font-size: 2rem;
+  line-height: 2.5rem;
+
+  &__icon {
+    width: $default-icon-size;
+    height: $default-icon-size;
+    margin-top: 5px;
+
+    @include media-tablet {
+      width: $default-icon-size-mobile;
+      height: $default-icon-size-mobile;
+
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../../core/styles/colors.scss";
+@import "../../../../core/styles/constants.scss";
+@import "../../../../core/styles/mixins.scss";
+@import "../../../../core/styles/media.scss";
+
+.task-item {
+  @include listItem;
+
+  &__main-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    @include media-tablet {
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    width: 60%;
+    max-width: 60%;
+    margin: 0 10px;
+
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+    @include media-tablet {
+      width: 90%;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 0;
+    }
+
+    @include media-mobile {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../../core/styles/mixins.scss";
+@import "../../../../core/styles/media.scss";
+
+.create-goal-block {
+  @include pageHeader;
+
+  &__input {
+    width: 50%;
+    padding: 0 10px !important;
+
+    @include media-tablet {
+      width: 100%;
+      padding: 0 !important;
+    }
+  }
+}

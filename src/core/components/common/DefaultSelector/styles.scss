@@ -1,0 +1,12 @@
+@import "../../../styles/colors.scss";
+
+$default-height: 35px;
+
+.default-select {
+  border: 2px solid $primary1;
+  color: $primary1;
+
+  font-size: 2rem;
+  line-height: 2.5rem;
+  height: $default-height;
+}

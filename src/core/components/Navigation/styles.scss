@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+@import "../../styles/media.scss";
+
+.main-navigation {
+  background-color: $primary1;
+
+  &__buttons-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button-item {
+    position: relative;
+    background-color: $primary1;
+    color: $text1;
+    padding: 25px;
+    text-decoration: none;
+
+    @include media-tablet {
+      padding: 15px;
+    }
+
+    @include media-mobile {
+      padding: 10px;
+    }
+
+    &_selected {
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5%;
+        height: 100%;
+        background-color: $text1;
+      }
+    }
+  }
+}

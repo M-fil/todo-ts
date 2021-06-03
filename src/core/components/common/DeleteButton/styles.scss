@@ -1,0 +1,20 @@
+$default-icon-size: 20px;
+$delete-button-color: #EF7E73;
+$button-size: 35px;
+
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $delete-button-color;
+  width: $button-size;
+  height: $button-size;
+  padding: 0;
+  border-radius: 10px;
+
+  &__icon {
+    width: $default-icon-size;
+    height: $default-icon-size;
+  }
+}

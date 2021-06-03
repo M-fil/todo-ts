@@ -1,0 +1,28 @@
+@import "../../../../core/styles/constants.scss";
+@import "../../../../core/styles/mixins.scss";
+@import "../../../../core/styles/media.scss";
+
+.goals-list {
+  padding: $default-vertical-page-padding $default-horizontal-page-padding;
+  overflow: auto;
+}
+
+.goals-item {
+  @include listItem;
+
+  display: flex;
+  align-items: center;
+
+  @include media-tablet {
+    justify-content: space-between;
+  }
+
+  &__text {
+    width: 60%;
+    margin: 0;
+
+    @include media-tablet {
+      width: initial;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/media.scss";
+
+$default-height: 35px;
+
+.default-text-input {
+  border: 2px solid $primary1;
+  border-radius: 5px;
+  color: $primary1;
+
+  font-size: 2rem;
+  line-height: 2.5rem;
+  height: $default-height;
+  padding: 0;
+
+  @include media-tablet {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
